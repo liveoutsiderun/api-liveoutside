@@ -7,7 +7,6 @@ const app = express();
 
 const dbConnection = require('./database/config');
 
-const port = 3000;
 // Cors
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
@@ -17,6 +16,11 @@ app.use('/api/v1', require('./routes/user'));
 // Connect to database
 dbConnection();
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+// Puerto de sevidor local
+app.set('host', process.env.HOST || '0.0.0.0');
+app.set('port', process.env.PORT || 3000);
+
+app.listen(app.get('port'), app.get('host'), () => {
+  /* eslint no-console: "off" */
+  console.log(`server on port ${app.get('port')} ${app.get('host')}`);
 });
