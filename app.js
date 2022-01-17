@@ -8,7 +8,9 @@ const app = express();
 const dbConnection = require('./database/config');
 
 // Cors
-app.use(cors());
+app.use(cors({
+  origin: 'https://api-liveoutside.herokuapp.com',
+}));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/api/v1', require('./routes/user'));
