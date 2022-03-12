@@ -32,7 +32,7 @@ const UserSchema = Schema({
     type: Boolean,
     default: true,
   },
-  created_at: {
+  createdAt: {
     type: Date,
     default: Date.now,
   },
