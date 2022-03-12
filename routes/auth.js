@@ -1,10 +1,10 @@
 const { Router } = require('express');
 
-const loginController = require('../controllers/authController');
+const AuthController = require('../controllers/authController');
 const AuthValidator = require('../validators/AuthValidator');
 
 const router = Router();
 
-router.post('/login', [AuthValidator.EmailValidator], loginController.login);
+router.post('/login', [AuthValidator.EmailValidator], AuthController.login);
 
 module.exports = router;
