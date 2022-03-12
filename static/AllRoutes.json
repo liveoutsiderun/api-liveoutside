@@ -1,0 +1,270 @@
+[
+    {
+      "id": 1,
+      "name": "Laguna Triángulo",
+      "activity": "Trekking",
+      "address": {
+        "zone": "Parque Nacional Alerce Andino",
+        "location": "Lenca",
+        "country": "Chile",
+        "region": {
+            "name": "Los Lagos",
+            "number": 10
+        },
+        "province": "Llanquihue",
+        "city": "Puerto Montt",
+        "ubication": {
+          "title": "Ubicación Laguna Triángulo",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.358102420979!2d-72.85507992208157!3d-41.48422765773082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183195878ba97f%3A0x28ceaf7751e928bf!2sOGwearstore!5e0!3m2!1ses-419!2scl!4v1634078201980!5m2!1ses-419!2scl"
+        },
+        "position": {
+          "lat": "-41.4847925",
+          "long": "-72.8553307,17"
+        }
+      },
+      "information": {
+        "index": {
+          "difficulty": "Alta",
+          "classification": {
+            "access": {
+              "abbreviation": "Pg",
+              "description": "El sendero pertence a zonas privadas, aún así se puede ingresar de manera gratuita."
+            },
+            "realized": {
+              "abbreviation": "C",
+              "description": "Para realizar el sendero es necesario pernoctar en el lugar dado que queda muy lejos del primer punto de llegada."
+            }
+          },
+          "distance": {
+            "value": 13.3,
+            "type_value": "km"
+          },
+          "time": {
+            "go": 5600,
+            "back": 5300,
+            "type_value": "ms"
+          },
+          "age": "+20",
+          "guide": "Altamente Requerido"
+        },
+        "basic": {
+          "signal": "Nula",
+          "season": "Marzo a Diciembre",
+          "water":{
+            "points":3,
+            "distance_points":{
+              "value": 3.3,
+              "type_value": "km"
+            }
+          }
+        },
+        "heights": {
+          "min": 300,
+          "max": 1232.2,
+          "type_value": "m",
+          "points": {}
+        },
+        "schedule": {
+          "open": "09:00 AM",
+          "close": "16:00 PM"
+        },
+        "price": {
+          "national": {
+            "older_adult": "Gratis",
+            "adult": 8000,
+            "kid": 12000,
+            "handicapped": 2000,
+            "type_value": "CLP"
+          },
+          "international": {
+            "adult": 9,
+            "type_value": "USD"
+          }
+        }
+      },
+      "created": "2021-11-11T20:47:06.832+00:00",
+      "update": "2021-12-11T20:47:06.832+00:00",
+      "images": [
+        {
+          "id": 1,
+          "author": "Live Outside",
+          "description": "Imagen Naturaleza",
+          "url": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80",
+          "created": "2021-11-11T20:47:06.832+00:00",
+          "upload": "2021-12-11T20:47:06.832+00:00",
+          "rank": 10,
+          "status": true
+        },
+        {
+          "id": 2,
+          "author": "Live Outside",
+          "description": "Imagen Naturaleza",
+          "url": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80",
+          "created": "2021-11-11T20:47:06.832+00:00",
+          "upload": "2021-12-11T20:47:06.832+00:00",
+          "rank": 8,
+          "status": true
+        }
+      ],
+      "video": {
+        "title": "Video Live Outside",
+        "url": "https://www.youtube.com/embed/OQ-abO_jamw"
+      },
+      "authors": {
+        "information": {
+          "id": 1,
+          "name": "Live Outside"
+        },
+        "video": {
+          "id": 1,
+          "name": "Live Outside"
+        },
+        "photographs": {
+          "id": 2,
+          "name": "Pablo Rus"
+        }
+      },
+      "status_route": {
+        "id": 1,
+        "number": 1,
+        "name": "Activo"
+      },
+      "pictograms": {
+        "important": [
+          {
+            "id": 1,
+            "title": "Helmet",
+            "description": "La ruta es necesario..."
+          }
+        ],
+        "equipament": [
+          {
+            "id": 2,
+            "title": "Helmet",
+            "description": "La ruta es necesario..."
+          }
+        ],
+        "route_has": [
+          {
+            "id": 3,
+            "title": "Helmet",
+            "description": "La ruta es necesario...",
+            "url": ""
+          }
+        ],
+        "before_leaving": [
+          {
+            "id": 4,
+            "title": "Helmet",
+            "description": "La ruta es necesario...",
+            "url": ""
+          }
+        ]
+      },
+      "how_to_get": {
+        "car": {
+          "tracts": [
+            {
+              "tract": 1,
+              "point_a": {
+                "number": 1,
+                "local": "Caleta",
+                "zone": "Lago Todo Los Santos",
+                "url":""
+              },
+              "point_b": {
+                "number": 2,
+                "local": "Caleta",
+                "zone": "Lago Todo Los Santos",
+                "url":""
+              },
+              "via": {
+                "type": "Terrestre",
+                "time": {
+                  "value": 3600,
+                  "type_value": "ms"
+                }
+              },
+              "contacts": [
+                {
+                  "id": 1,
+                  "name": "AgroTurismo Cascada Yefe",
+                  "service": {
+                    "name": "Traslado en bote",
+                    "price": {
+                      "value": 6000,
+                      "type_value": "CLP"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "nearby_routes":[
+        {
+          "id": 2,
+          "name": "La Paloma",
+          "activity": "Trekking",
+          "position": {
+            "lat": "-41.4847925",
+            "long": "-72.8553307,17"
+          },
+          "images": [
+            {
+              "id": 1,
+              "author": "Live Outside",
+              "description": "Imagen Naturaleza",
+              "url": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80",
+              "created": "2021-11-11T20:47:06.832+00:00",
+              "upload": "2021-12-11T20:47:06.832+00:00",
+              "rank": 10,
+              "status": true
+            }
+          ]
+        }
+      ],
+      "nearby_accommodation_centers":[
+        {
+          "id": 2,
+          "name": "Agroturismo Cascada Yefe",
+          "type": "Camping",
+          "address": {
+            "zone": "Parque Nacional Alerce Andino",
+            "location": "Lenca",
+            "country": "Chile",
+            "region": {
+                "name": "Los Lagos",
+                "number": 10
+            },
+            "province": "Llanquihue",
+            "city": "Puerto Montt",
+            "ubication": {
+              "title": "Ubicación Laguna Triángulo",
+              "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.358102420979!2d-72.85507992208157!3d-41.48422765773082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183195878ba97f%3A0x28ceaf7751e928bf!2sOGwearstore!5e0!3m2!1ses-419!2scl!4v1634078201980!5m2!1ses-419!2scl"
+            },
+            "position": {
+              "lat": "-41.4847925",
+              "long": "-72.8553307,17"
+            }
+          },
+          "bookings":{
+            "status": false
+          },
+          "images": [
+            {
+              "id": 1,
+              "author": "Live Outside",
+              "description": "Imagen Naturaleza",
+              "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+              "created": "2021-11-11T20:47:06.832+00:00",
+              "upload": "2021-12-11T20:47:06.832+00:00",
+              "rank": 10,
+              "status": true
+            }
+          ]
+        }
+      ]
+    }
+  ]

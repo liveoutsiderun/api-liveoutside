@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const { ENUM_ACTIVITY } = require('../utils/const');
 
 const UserSchema = Schema({
   name: {
@@ -8,14 +9,24 @@ const UserSchema = Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   birth_date: {
     type: Date,
     required: true,
-    default: Date.now,
   },
-  activity: {
+  activitys: {
+    type: [
+      {
+        type: String,
+        enum: ENUM_ACTIVITY,
+      },
+    ],
+  },
+  role: {
     type: String,
+    default: 'USER_ROLE',
+    enum: ['ADMIN_ROLE', 'USER_ROLE'],
   },
   status: {
     type: Boolean,

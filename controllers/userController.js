@@ -1,19 +1,23 @@
 /* eslint-disable camelcase */
-const { User } = require('../models');
+const { createUser } = require('../services/UserService');
+const { generateJWT } = require('../helpers/generate-token');
 
 module.exports = {
   create: async (req, res) => {
     const {
-      name, email, date_birth, activity,
+      name, email, birth_date, activitys,
     } = req.body;
-    const user = new User({
-      name, email, date_birth, activity,
-    });
+    const user = createUser(name, email, birth_date, activitys);
     try {
       await user.save();
-      res.status(200).send(user);
+      // Generate JWT
+      const token = await generateJWT(user.id, user.role);
+      res.status(200).send({ token, msg: 'User creado' });
     } catch (error) {
-      res.status(404).send(error);
+      console.log(error);
+      res.status(404).send({
+        msg: 'Contact the administrator',
+      });
     }
   },
 };
