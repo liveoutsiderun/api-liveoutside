@@ -9,13 +9,13 @@ module.exports = {
       const user = await User.findOne({ email });
       if (!user) {
         return res.status(400).send({
-          msg: 'The User NOT EXIST',
+          message: 'El usuario no existe en nuestra base de datos',
         });
       }
       // The user is active
       if (!user.status) {
         return res.status(400).send({
-          msg: 'The User - status : false',
+          message: 'Usuario bloqueado, contáctate con el administrador',
         });
       }
       // Generate JWT
@@ -23,13 +23,12 @@ module.exports = {
 
       return res.json({
         token,
-        msg: 'Login Okey',
+        message: 'Login Okey',
       });
     } catch (error) {
-      /* eslint no-console: "off" */
       console.log(error);
       return res.status(500).send({
-        msg: 'Contact the administrator',
+        message: 'Ocurrio un error, contáctate con el administrador',
       });
     }
   },

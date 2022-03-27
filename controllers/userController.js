@@ -12,7 +12,7 @@ module.exports = {
       await user.save();
       // Generate JWT
       const token = await generateJWT(user.id, user.role);
-      res.status(200).send({ token, msg: 'User creado' });
+      res.status(200).send({ token, message: 'User creado' });
     } catch (error) {
       console.log(error);
       res.status(404).send({
