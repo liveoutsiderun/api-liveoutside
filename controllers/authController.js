@@ -21,13 +21,10 @@ module.exports = {
       // Generate JWT
       const token = await generateJWT(user.id, user.role);
 
-      return res.json({
-        token,
-        message: 'Login Okey',
-      });
+      return res.status(200).send({ token });
     } catch (error) {
       console.log(error);
-      return res.status(500).send({
+      return res.status(404).send({
         message: 'Ocurrio un error, contáctate con el administrador',
       });
     }

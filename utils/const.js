@@ -1,4 +1,4 @@
-const ENUM_ACTIVITY = ['Trekking', 'Hiking', 'Escalada', 'Trail Running'];
+const ENUM_ACTIVITY = ['trekking', 'hiking', 'escalada', 'trail running'];
 module.exports = {
   ENUM_ACTIVITY,
 };

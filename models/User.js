@@ -32,6 +32,9 @@ const UserSchema = Schema({
     type: Boolean,
     default: true,
   },
+  terms_conditions: {
+    type: Boolean,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
