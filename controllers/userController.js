@@ -7,7 +7,7 @@ const { User } = require('../models');
 module.exports = {
   create: async (req, res) => {
     const {
-      name, email, birth_date, activitys, terms_conditions,
+      name, email, birth_date, activitys, terms_conditions, region,
     } = req.body;
 
     const birthDateISO = onlyDateInformatISO(birth_date);
@@ -24,7 +24,7 @@ module.exports = {
           message: 'Revisa nuestros términos y condiciones',
         });
       }
-      const user = createUser(name, email, birthDateISO, activitys, terms_conditions);
+      const user = createUser(name, email, birthDateISO, activitys, terms_conditions, region);
       await user.save();
       // Generate JWT
       const token = await generateJWT(user.id, user.role);

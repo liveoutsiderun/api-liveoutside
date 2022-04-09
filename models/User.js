@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const { ENUM_ACTIVITY } = require('../utils/const');
+const { ENUM_ACTIVITY, ENUM_REGIONS } = require('../utils/const');
 
 const UserSchema = Schema({
   name: {
@@ -22,6 +22,11 @@ const UserSchema = Schema({
         enum: ENUM_ACTIVITY,
       },
     ],
+  },
+  region: {
+    type: String,
+    enum: ENUM_REGIONS,
+    required: true,
   },
   role: {
     type: String,
