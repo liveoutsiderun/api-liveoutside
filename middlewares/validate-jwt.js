@@ -27,7 +27,7 @@ const validateJWT = async (req, res, next) => {
     return next();
   } catch (error) {
     return res.status(401).json({
-      message: 'Token is not valid',
+      message: 'Para ver la ruta tienes que registrarte o iniciar sesión - TOKEN no es válido',
     });
   }
 };
