@@ -41,8 +41,8 @@
             "type_value": "km"
           },
           "time": {
-            "go": 12600,
-            "back": 14400,
+            "go": 10800,
+            "back": 10800,
             "type_value": "ms"
           },
           "age": "+16",
@@ -71,15 +71,15 @@
         },
         "price": {
           "national": {
-            "older_adult": "Gratis",
-            "adult": "Gratis",
-            "kid": "Gratis",
-            "handicapped": "Gratis",
+            "older_adult": "5000",
+            "adult": "5000",
+            "kid": "5000",
+            "handicapped": "5000",
             "type_value": "CLP"
           },
           "international": {
-            "adult": "Gratis",
-            "type_value": "CLP"
+            "adult": "6",
+            "type_value": "USD"
           }
         },
         "points" : {

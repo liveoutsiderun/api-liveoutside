@@ -30,8 +30,8 @@
             "type_value": "km"
           },
           "time": {
-            "go": 12600,
-            "back": 14400,
+            "go": 10800,
+            "back": 10800,
             "type_value": "ms"
           },
           "age": "+16",
