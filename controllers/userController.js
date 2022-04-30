@@ -9,7 +9,7 @@ module.exports = {
     const {
       name, email, birth_date, activitys, terms_conditions, region,
     } = req.body;
-
+    const emailLowerCase = email.toLowerCase();
     const birthDateISO = onlyDateInformatISO(birth_date);
     try {
       // Verification if email exist
@@ -24,7 +24,14 @@ module.exports = {
           message: 'Revisa nuestros términos y condiciones',
         });
       }
-      const user = createUser(name, email, birthDateISO, activitys, terms_conditions, region);
+      const user = createUser(
+        name,
+        emailLowerCase,
+        birthDateISO,
+        activitys,
+        terms_conditions,
+        region,
+      );
       await user.save();
       // Generate JWT
       const token = await generateJWT(user.id, user.role);

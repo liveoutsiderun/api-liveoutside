@@ -4,9 +4,10 @@ const { User } = require('../models');
 module.exports = {
   login: async (req, res) => {
     const { email } = req.body;
+    const emailLowerCase = email.toLowerCase();
     try {
       // Verification if email exist
-      const user = await User.findOne({ email });
+      const user = await User.findOne({ emailLowerCase });
       if (!user) {
         return res.status(400).send({
           message: 'El usuario no existe en nuestra base de datos',
